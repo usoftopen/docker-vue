@@ -13,7 +13,7 @@
 
 #### 访问配置
 
-自定义端口可在项目目录下 `vue.config.js`
+自定义端口可在项目目录下编辑或创建 `vue.config.js` 配置以下代码
 
     module.exports = {
         devServer: {
@@ -23,7 +23,7 @@
         }
     }
 
-结合 Nginx 反向代理至 Vue 容器，如下为 nginx config
+结合 Nginx 反向代理至 Vue 容器，如下为 nginx config，注意如果你用的云主机如果前端服务器和代理服务器不在同一个主机务必在安全组配置 3000 端口对外允许访问
 
     server {
 
