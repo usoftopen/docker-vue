@@ -1,4 +1,12 @@
-#### 基于 Docker-compose 的 Vue CLI3 镜像
+### 基于 Docker-compose 的 Vue CLI3 镜像
+
+使用方式
+
+    git clone https://github.com/exc-soft/docker-vue.git
+
+    cd docker-vue
+    docker-compose up -d --build
+
 
 自定义端口可在项目目录下 `vue.config.js`
 
