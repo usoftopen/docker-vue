@@ -1,6 +1,9 @@
 FROM node:8
 
-RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
-RUN cnpm install -g @vue/cli
+# 安装基础工具
+RUN apt-get update && apt-get install -y vim
+
+# 安装 Vue 脚手架
+RUN yarn global add @vue/cli
 
 ENTRYPOINT ["/bin/bash", "/home/start.sh"]

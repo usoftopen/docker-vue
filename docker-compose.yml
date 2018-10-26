@@ -7,5 +7,4 @@ services:
       - ./app:/home/node/app:rw
       - ./start.sh:/home/start.sh:rw
     ports:
-      - "8000:8000"
-    
+      - "3000:3000"
